@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Second Page</title>
+
+    <!-- Font Awesome -->
+	<link rel="stylesheet" href="./fontawesome/css/all.css">
+
+	<!-- Custom Css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Font Style -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+  	<div class="modal_container row">
+  		<div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+  			<div id="modal" class="p-4">
+				<h3  class="d-flex justify-content-between"><span id="modalTitle">Add Item</span> <i class="fas fa-times closeModalBtn"></i></h3>
+				<hr>
+				<form id="modalForm">
+					
+				</form>
+	  		</div>	
+  		</div>
+  	</div>
+
+  	<!-- NavBar -->
+	<nav style="background-color: rgb(0, 50, 99);" class="align-items-center mb-4 navbar navbar-expand-md">
+		<a href="/" class="navbar-brand">
+			<img src="./assets/images/engeneeringLogo.png" width="364" height="100">
+		</a>
+		<button type="button" class="navbar-toggler">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse">
+			<ul class="ml-auto navbar-nav">
+				<li class="nav-item">
+					<a href="/logout" class="btn btn-danger nav-link">Logout</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- NavBar End -->
+
+	<!-- Main Content -->
+		<div class="container">	<!-- Container -->
+			<h2 class="custom__letter-spacing">Step 2. Fill in all the information you remember.</h2>
+			<hr>
+			<div class="row">
+				<!-- <div class="col-md-2">
+					hello
+				</div> -->
+				<div class="col-md-12">
+					<div id="accordion">
+					  <div class="card">
+					    <div class="card-header card-header-custom" id="headingOne">
+					      <h5 class="card__section-title mb-0"> 
+					        <button class="btn btn-link collapse-trigger" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<i class="fas fa-2x fa-bullhorn card__section-titleIcon"></i> <span class="card__section-titleText">List of my Publications</span>
+					        </button>
+					        <i class="fas fa-chevron-up section__arrow" data-arrowId="headingOneArrow"></i>
+					      </h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse collapse-div show" aria-labelledby="headingOne" data-parent="#accordion">
+					      <div class="card-body p-0">
+								       <div id="publication_accordion">
+										  <div class="card border-0">
+										    <div class="card-header inner__section--header p-0" id="publication_headingOne">
+										      <h5 class="mb-0 p-3">
+										        <button class="btn btn-link" data-toggle="collapse" data-target="#publication_collapseOne" aria-expanded="false" aria-controls="publication_collapseOne">
+										          Journal Articles
+										        </button>
+										        <i class="fas fa-chevron-down section__arrow" data-arrowId="publication_headingOneArrow"></i>
+										      </h5>
+										    </div>
+
+										    <div id="publication_collapseOne" class="collapse" aria-labelledby="publication_headingOne" data-parent="#publication_accordion">
+										      <div class="card-body p-0">
+												<table class="table m-0 table-bordered table-hover">
+												  <thead>
+												    <tr>
+												      <th scope="col">#</th>
+												      <th scope="col">title</th>
+												      <th scope="col">action</th>
+												    </tr>
+												  </thead>
+												  <tbody id="journal_section">
+														<!-- Here go all the elements -->
+												  </tbody>
+												</table>
+												<div class="add_itemBtn--container">
+													<button class="btn add_itemBtn btn-block" data-type="journal"> 
+														<i class="far fa-lg fa-plus-square"></i>
+													</button>
+										      	</div>
+										  		</div>
+										    </div>
+										  </div>
+										  <div class="card border-0">
+										    <div class="card-header inner__section--header p-0" id="publication_headingTwo">
+										      <h5 class="mb-0 p-3">
+										        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#publication_collapseTwo" aria-expanded="false" aria-controls="publication_collapseTwo">
+										          Book Chapters
+										        </button>
+										        <i class="fas fa-chevron-down section__arrow" data-arrowId="publication_headingTwoArrow"></i>
+										      </h5>
+										    </div>
+										    <div id="publication_collapseTwo" class="collapse" aria-labelledby="publication_headingTwo" data-parent="#publication_accordion">
+										      <div class="card-body p-0">
+										      	<table class="table m-0 table-bordered table-hover">
+												  <thead>
+												    <tr>
+												      <th scope="col">#</th>
+												      <th scope="col">title</th>
+												    </tr>
+												  </thead>
+												  <tbody id="book_section">
+														<!-- Here go all the elements -->
+												  </tbody>
+												</table>
+												<div class="add_itemBtn--container">
+													<button class="btn add_itemBtn btn-block" data-type="book"> 
+														<i class="far fa-lg fa-plus-square"></i>
+													</button>
+												</div>
+										      </div>
+										    </div>
+										  </div>
+										  <div class="card border-0">
+										    <div class="card-header inner__section--header p-0" id="publication_headingThree">
+										      <h5 class="mb-0 p-3">
+										        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#publication_collapseThree" aria-expanded="false" aria-controls="publication_collapseThree">
+										          Workshops
+										        </button>
+										        <i class="fas fa-chevron-down section__arrow" data-arrowId="publication_headingThreeArrow"></i>
+										      </h5>
+										    </div>
+										    <div id="publication_collapseThree" class="collapse" aria-labelledby="publication_headingThree" data-parent="#publication_accordion">
+										      <div class="card-body p-0">
+										      	<table class="table m-0 table-bordered table-hover">
+												  <thead>
+												    <tr>
+												      <th scope="col">#</th>
+												      <th scope="col">title</th>
+												    </tr>
+												  </thead>
+												  <tbody id="workshop_section">
+														<!-- Here go all the elements -->
+												  </tbody>
+												</table>
+												<div class="add_itemBtn--container">
+													<button class="btn add_itemBtn btn-block" data-type="workshop"> 
+														<i class="far fa-lg fa-plus-square"></i>
+													</button>
+												</div>
+										      </div>
+										    </div>
+										  </div>
+										  <div class="card border-0">
+										    <div class="card-header inner__section--header p-0" id="publication_headingFour">
+										      <h5 class="mb-0 p-3">
+										        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#publication_collapseFour" aria-expanded="false" aria-controls="publication_collapseFour">
+										          Misc
+										        </button>
+										        <i class="fas fa-chevron-down section__arrow" data-arrowId="publication_headingFourArrow"></i>
+										      </h5>
+										    </div>
+										    <div id="publication_collapseFour" class="collapse" aria-labelledby="publication_headingFour" data-parent="#publication_accordion">
+										      <div class="card-body p-0">
+										      	<table class="table m-0 table-bordered table-hover">
+												  <thead>
+												    <tr>
+												      <th scope="col">#</th>
+												      <th scope="col">title</th>
+												    </tr>
+												  </thead>
+												  <tbody id="misc_section">
+														<!-- Here go all the elements -->
+												  </tbody>
+												</table>
+													<div class="add_itemBtn--container">
+														<button class="btn add_itemBtn btn-block" data-type="misc"> 
+															<i class="far fa-lg fa-plus-square"></i>
+														</button>
+										      		</div>
+										  		</div>
+										    </div>
+										  </div>
+										</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header card-header-custom" id="headingTwo">
+					      <h5 class="card__section-title mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          <i class="fas fa-2x fa-file-powerpoint card__section-titleIcon"></i> <span class="card__section-titleText">List of my Presentations</span> 
+					        </button>
+					        <i class="fas fa-chevron-down section__arrow" data-arrowId="headingTwoArrow"></i>
+					      </h5>
+					    </div>
+					    <div id="collapseTwo" class="collapse collapse-div" aria-labelledby="headingTwo" data-parent="#accordion">
+					      <div class="card-body p-0">
+					       <table class="table m-0 table-bordered table-hover">
+							  <thead>
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">title</th>
+							    </tr>
+							  </thead>
+							  <tbody id="presentation_section">
+									<!-- Here go all the elements -->
+							  </tbody>
+							</table>
+							<div class="add_itemBtn--container">
+								<button class="btn add_itemBtn btn-block" data-type="presentation"> 
+									<i class="far fa-lg fa-plus-square"></i>
+								</button>
+							</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header card-header-custom" id="headingThree">
+					      <h5 class="card__section-title mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          <i class="fas fa-2x fa-award card__section-titleIcon"></i> <span class="card__section-titleText">List of my Awards</span> 
+					        </button>
+					        <i class="fas fa-chevron-down section__arrow" data-arrowId="headingThreeArrow"></i>
+					      </h5>
+					    </div>
+					    <div id="collapseThree" class="collapse collapse-div" aria-labelledby="headingThree" data-parent="#accordion">
+					      <div class="card-body">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="alert alert-warning mt-5 p-4">
+				If you have any problems entering the data, be comfortable to contact our <b>group</b>
+			</div>
+			<div class="row">
+				<div class="col-md-10 d-flex justify-content-center" >
+					<div class="p-0 menu_container">
+						<button class="btn btn-custom btn-block m-0">
+							<i class="fas fa-chevron-left"></i> go back
+						</button>
+						<button class="btn btn-custom btn-block m-0">
+							next page <i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			
+		</div> <!-- Container -->
+
+	<!-- Main Content End-->
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <script src="./js/Item_Controller.js" type="module"></script> -->
+    <!-- <script src="./js/UI_Controller.js" type="module"></script> -->
+    
+    <script src="./js/app.js" type="module"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
